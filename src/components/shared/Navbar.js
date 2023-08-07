@@ -62,7 +62,7 @@ const Navbar = () => {
       </div>
       <div>
         <Link
-          href={"https://pc-builder-mauve.vercel.app/pc-build"}
+          href={"/pc-build"}
           className="border-0 bg-purple-800 text-white py-1.5 px-3 text-xs font-semibold rounded-full cursor-pointer hover:bg-purple-900 transition-all duration-200"
         >
           PC Builder
@@ -76,7 +76,7 @@ const Navbar = () => {
           </button>
         ) : (
           <Link
-            href={"https://pc-builder-mauve.vercel.app/login"}
+            href={"/login"}
             className="ml-5 border-0 bg-slate-300 text-black py-1.5 px-3 text-xs font-semibold rounded-full cursor-pointer transition-all duration-200"
           >
             Login
