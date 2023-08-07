@@ -14,7 +14,7 @@ export const authOptions = {
     }),
   ],
   pages: {
-    signIn: "login",
+    signIn: "https://pc-builder-frontend.netlify.app/login",
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
