@@ -14,7 +14,7 @@ export const authOptions = {
     }),
   ],
   pages: {
-    signIn: "https://pc-builder-eta-blue.vercel.app/login",
+    signIn: "http://localhost:3000/login",
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
