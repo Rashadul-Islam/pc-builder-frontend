@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useSession, signOut } from "next-auth/react";
-import { Dropdown, Space } from "antd";
+import { Dropdown } from "antd";
 import Link from "next/link";
 import logo from "../../assets/logo.png";
 import Image from "next/image";
@@ -61,12 +61,12 @@ const Navbar = () => {
         </Dropdown>
       </div>
       <div>
-        <button
-          onClick={() => router.push("/pc-build")}
+        <Link
+          href={"/pc-build"}
           className="border-0 bg-purple-800 text-white py-1.5 px-3 text-xs font-semibold rounded-full cursor-pointer hover:bg-purple-900 transition-all duration-200"
         >
           PC Builder
-        </button>
+        </Link>
         {session?.user ? (
           <button
             onClick={() => signOut()}
