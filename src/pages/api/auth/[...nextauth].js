@@ -14,7 +14,7 @@ export const authOptions = {
     }),
   ],
   pages: {
-    signIn: "https://pc-builder-pied-three.vercel.app/login",
+    signIn: "login",
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
